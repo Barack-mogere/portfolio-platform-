@@ -12,6 +12,11 @@ function App() {
   const filteredProjects = projectList.filter((project) =>
      project.title.toLowerCase().includes(searchTerm.toLowerCase()),
    );
+   
+   const addProject = (newProject) => {
+     setProjectList([...projectList, newProject]);
+   };
+
   return (
     <>
       <Header />
