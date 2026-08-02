@@ -1,3 +1,4 @@
+import "../styles/ProjectForm.css";
 import { useState } from "react";
 
 function ProjectForm({ addProject }) {

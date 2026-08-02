@@ -1,3 +1,4 @@
+import "./styles/App.css";
 import { useState } from "react";
 import Header from "./components/Header";
 import SearchBar from "./components/SearchBar";
