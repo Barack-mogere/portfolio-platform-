@@ -1,16 +1,100 @@
-# React + Vite
+# Creative Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern and responsive React application for showcasing creative projects. The application allows users to browse a collection of projects, search through them in real time, and dynamically add new projects through an interactive form.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Display a collection of projects
+- Search projects by title
+- Add new projects dynamically
+- Responsive design for desktop, tablet, and mobile devices
+- Modern card-based user interface
+- Component-based architecture using React
+- Unit testing with Vitest and React Testing Library
 
-## React Compiler
+## Built With
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript (ES6+)
+- CSS3
+- React Testing Library
+- Vitest
 
-## Expanding the ESLint configuration
+## Project Structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```
+src/
+│── components/
+│── data/
+│── styles/
+│── __tests__/
+│── App.jsx
+│── main.jsx
+```
+
+## Getting Started
+
+### Clone the repository
+
+```bash
+git clone https://github.com/Barack-mogere/portfolio-platform-.git
+```
+
+### Navigate into the project
+
+```bash
+cd creative-portfolio
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Start the development server
+
+```bash
+npm run dev
+```
+
+The application will be available at:
+
+```
+http://localhost:5173
+```
+
+## Running Tests
+
+Run all unit tests with:
+
+```bash
+npm run test
+```
+
+## Project Functionality
+
+- Browse a list of creative projects
+- Search projects instantly using the search bar
+- Add new projects without refreshing the page
+- View project details including:
+  - Image
+  - Description
+  - Technologies
+  - GitHub Repository
+  - Live Demo
+
+## Future Improvements
+
+- Edit existing projects
+- Delete projects
+- Store projects using a backend or database
+- User authentication
+- Image upload support instead of image URLs
+
+## Author
+
+**Barack Mogere**
+
+https://github.com/Barack-mogere
