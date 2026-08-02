@@ -9,7 +9,7 @@ function ProjectForm() {
     github: "",
     live: "",
   });
-  
+
   const handleChange = (event) => {
     const { name, value } = event.target;
 
@@ -23,17 +23,52 @@ function ProjectForm() {
     <form>
       <h2>Add New Project</h2>
 
-      <input type="text" placeholder="Project Title" />
+      <input
+        type="text"
+        name="title"
+        placeholder="Project Title"
+        value={formData.title}
+        onChange={handleChange}
+      />
 
-      <input type="text" placeholder="Image URL" />
+      <input
+        type="text"
+        name="image"
+        placeholder="Image URL"
+        value={formData.image}
+        onChange={handleChange}
+      />
 
-      <textarea placeholder="Project Description"></textarea>
+      <textarea
+        name="description"
+        placeholder="Project Description"
+        value={formData.description}
+        onChange={handleChange}
+      />
 
-      <input type="text" placeholder="Technologies" />
+      <input
+        type="text"
+        name="technologies"
+        placeholder="Technologies"
+        value={formData.technologies}
+        onChange={handleChange}
+      />
 
-      <input type="text" placeholder="GitHub Link" />
+      <input
+        type="text"
+        name="github"
+        placeholder="GitHub Link"
+        value={formData.github}
+        onChange={handleChange}
+      />
 
-      <input type="text" placeholder="Live Demo Link" />
+      <input
+        type="text"
+        name="live"
+        placeholder="Live Demo Link"
+        value={formData.live}
+        onChange={handleChange}
+      />
 
       <button>Add Project</button>
     </form>
