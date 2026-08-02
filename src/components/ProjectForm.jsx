@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-function ProjectForm() {
+function ProjectForm({ addProject }) {
   const [formData, setFormData] = useState({
     title: "",
     image: "",
@@ -19,8 +19,28 @@ function ProjectForm() {
     });
   };
 
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const newProject = {
+      id: Date.now(),
+      ...formData,
+    };
+
+    addProject(newProject);
+
+    setFormData({
+      title: "",
+      image: "",
+      description: "",
+      technologies: "",
+      github: "",
+      live: "",
+    });
+  };
+
   return (
-    <form>
+    <form onSubmit={handleSubmit}>
       <h2>Add New Project</h2>
 
       <input
@@ -70,7 +90,7 @@ function ProjectForm() {
         onChange={handleChange}
       />
 
-      <button>Add Project</button>
+      <button type="submit">Add Project</button>
     </form>
   );
 }
