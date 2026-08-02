@@ -20,7 +20,7 @@ function App() {
   };
 
   return (
-    <>
+    <div className="app">
       <Header />
 
       <SearchBar searchTerm={searchTerm} setSearchTerm={setSearchTerm} />
@@ -28,7 +28,7 @@ function App() {
       <ProjectForm addProject={addProject} />
 
       <ProjectList projects={filteredProjects} />
-    </>
+    </div>
   );
 }
 
